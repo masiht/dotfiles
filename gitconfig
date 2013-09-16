@@ -19,6 +19,7 @@
     outgoing = !git out
     unstage = reset HEAD --
     last = log -1 HEAD
+    ba = branch --all
 
 [core]
     editor = vim
