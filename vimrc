@@ -23,7 +23,6 @@ Bundle 'vim-scripts/git-cheat'
 Bundle 'vim-scripts/diffchanges.vim'
 Bundle 'sukima/xmledit'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'vim-scripts/DirDiff.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NORMAL CONFIG
