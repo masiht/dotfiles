@@ -6,7 +6,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
-Bundle 'phleet/vim-mercenary'
 Bundle 'kien/ctrlp.vim'
 Bundle 'greatghoul/vim-web-indent'
 Bundle 'hynek/vim-python-pep8-indent'
@@ -14,7 +13,6 @@ Bundle 'jnurmine/Zenburn'
 Bundle 'Townk/vim-autoclose'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/linediff.vim'
-Bundle 'vim-scripts/Lawrencium'
 Bundle 'vim-scripts/gitv'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'vim-scripts/Clam'
@@ -86,5 +84,5 @@ au Syntax * RainbowParenthesesLoadBraces
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SYNTASTIC
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_python_checkers = ['pep8', 'pylint', 'pyflakes']
+let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'python', 'pep8']
 
