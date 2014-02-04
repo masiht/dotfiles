@@ -23,6 +23,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-abolish'
 Bundle 'Rykka/riv.vim'
 Bundle 'luochen1990/rainbow'
+Bundle 'tell-k/vim-autopep8'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NORMAL CONFIG
