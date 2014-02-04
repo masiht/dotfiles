@@ -11,7 +11,6 @@ Bundle 'greatghoul/vim-web-indent'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'jnurmine/Zenburn'
 Bundle 'Townk/vim-autoclose'
-Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/linediff.vim'
 Bundle 'vim-scripts/gitv'
 Bundle 'davidhalter/jedi-vim'
@@ -21,6 +20,9 @@ Bundle 'vim-scripts/git-cheat'
 Bundle 'vim-scripts/diffchanges.vim'
 Bundle 'sukima/xmledit'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-abolish'
+Bundle 'Rykka/riv.vim'
+Bundle 'luochen1990/rainbow'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NORMAL CONFIG
@@ -74,12 +76,32 @@ map <leader>s :sp %%
 map <leader>h :sp %%
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" RAINBOW PARENTHESES
+" RAINBOW PARENTHESES IMPROVED
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+    \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+    \   'ctermfgs': ['lightred', 'cyan', 'green', 'lightmagenta', 'red',
+    \                'darkcyan', 'darkgreen', 'magenta'],
+    \   'operators': '_,_',
+    \   'parentheses': [['(',')'], ['\[','\]'], ['{','}']],
+    \   'separately': {
+    \       '*': {},
+    \       'lisp': {
+    \           'guifgs': ['royalblue3', 'darkorange3', 'seagreen3',
+    \                      'firebrick', 'darkorchid3'],
+    \           'ctermfgs': ['darkgray', 'darkblue', 'darkmagenta',
+    \                        'darkcyan', 'darkred', 'darkgreen'],
+    \       },
+    \       'html': {
+    \           'parentheses': [['(',')'], ['\[','\]'], ['{','}']]
+    \       },
+    \       'tex': {
+    \           'operators': '',
+    \           'parentheses': [['(',')'], ['\[','\]']],
+    \       },
+    \   }
+    \}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SYNTASTIC
