@@ -108,4 +108,4 @@ let g:rainbow_conf = {
 " SYNTASTIC
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'python', 'pep8']
-
+let g:syntastic_javascript_checkers = ['gjslint']
