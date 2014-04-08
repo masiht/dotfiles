@@ -20,6 +20,7 @@
     unstage = reset HEAD --
     last = log -1 HEAD
     ba = branch --all
+    fa = fetch --all
 
 [core]
     editor = vim
