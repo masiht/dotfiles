@@ -1,35 +1,39 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " VUNDLE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set nocompatible
+filetype off
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kien/ctrlp.vim'
-Bundle 'greatghoul/vim-web-indent'
-Bundle 'hynek/vim-python-pep8-indent'
-Bundle 'jnurmine/Zenburn'
-Bundle 'Townk/vim-autoclose'
-Bundle 'vim-scripts/linediff.vim'
-Bundle 'vim-scripts/gitv'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'vim-scripts/Clam'
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-scripts/git-cheat'
-Bundle 'vim-scripts/diffchanges.vim'
-Bundle 'sukima/xmledit'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-abolish'
-Bundle 'Rykka/riv.vim'
-Bundle 'luochen1990/rainbow'
-Bundle 'tell-k/vim-autopep8'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'greatghoul/vim-web-indent'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'jnurmine/Zenburn'
+Plugin 'Townk/vim-autoclose'
+Plugin 'vim-scripts/linediff.vim'
+Plugin 'vim-scripts/gitv'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'vim-scripts/Clam'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/git-cheat'
+Plugin 'vim-scripts/diffchanges.vim'
+Plugin 'sukima/xmledit'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-abolish'
+Plugin 'Rykka/riv.vim'
+Plugin 'luochen1990/rainbow'
+Plugin 'tell-k/vim-autopep8'
+
+call vundle#end()
+filetype indent plugin on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NORMAL CONFIG
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible
-filetype indent plugin on
 syntax on
 set t_Co=256
 colorscheme zenburn
@@ -49,6 +53,7 @@ set cmdheight=2
 set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 set shiftwidth=4
+set tabstop=4
 set softtabstop=4
 set expandtab
 set smarttab
