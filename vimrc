@@ -16,7 +16,8 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-scripts/linediff.vim'
 Plugin 'vim-scripts/gitv'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'vim-scripts/Clam'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/git-cheat'
@@ -114,3 +115,5 @@ let g:rainbow_conf = {
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'python', 'pep8']
 let g:syntastic_javascript_checkers = ['gjslint']
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ '
