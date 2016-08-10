@@ -9,25 +9,13 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
-Plugin 'greatghoul/vim-web-indent'
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-scripts/linediff.vim'
 Plugin 'vim-scripts/gitv'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'davidhalter/jedi-vim'
-Plugin 'vim-scripts/Clam'
-Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/git-cheat'
-Plugin 'vim-scripts/diffchanges.vim'
 Plugin 'sukima/xmledit'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-abolish'
-Plugin 'Rykka/riv.vim'
 Plugin 'luochen1990/rainbow'
-Plugin 'tell-k/vim-autopep8'
 
 call vundle#end()
 filetype indent plugin on
@@ -36,8 +24,9 @@ filetype indent plugin on
 " NORMAL CONFIG
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
+set background=dark
+colorscheme solarized
 set t_Co=256
-colorscheme zenburn
 set hidden
 set wildmenu
 set showcmd
@@ -109,11 +98,3 @@ let g:rainbow_conf = {
     \       },
     \   }
     \}
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" SYNTASTIC
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'python', 'pep8']
-let g:syntastic_javascript_checkers = ['gjslint']
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ '
